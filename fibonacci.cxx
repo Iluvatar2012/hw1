@@ -39,13 +39,13 @@ int main (int argcount, char** argvector) {
 	cout << "The " << num;
 
 	// check which ending to use
-	if (num == 1)
+	if (num%10 == 1)
 		cout << "-st ";
-	else if (num == 2)
+	else if (num%10 == 2)
 		cout << "-nd ";
-	else if (num == 3)
+	else if (num%10 == 3)
 		cout << "-rd ";
-	else if (num >= 4)
+	else if (num%10 >= 4)
 		cout << "-th ";
 
 	// do the rest
